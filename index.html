@@ -1273,7 +1273,7 @@
         const step   = Math.ceil(target / 30);
         const timer  = setInterval(() => {
           current = Math.min(current + step, target);
-          entry.target.textContent = current + '+';
+          entry.target.textContent = current;
           if (current >= target) clearInterval(timer);
         }, 50);
         countObs.unobserve(entry.target);
